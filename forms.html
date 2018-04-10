@@ -2,40 +2,96 @@
 <html>
 <head>
 	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
 </head>
 <body>
+	<div>
+		<h2>Sign In</h2>
+		<form action="/sign-in-url" method="get">
+			<label>
+				Username:
+				<input type="text" name="Name" placeholder="username">
+			</label>
+			<label>
+				Password:
+				<input type="password" name="Password" placeholder="password">
+			</label>
+			<button>Login</button>
+			<input type="submit" name="Submit">
+		</form>
+	</div>
 	
-	<h2>Sign In</h2>
-	<form action="/sign-in-url" method="get">
-		<label>
-			Username:
-			<input type="text" name="Name" placeholder="username">
-		</label>
-		<label>
-			Password:
-			<input type="password" name="Password" placeholder="password">
-		</label>
-		<button>Login</button>
-		<input type="submit" name="Submit">
-	</form>
+	<div>	
+		<input type="text" placeholder="username" name="Text">
+		<input type="color" name="Color">
+		<input type="radio" name="Radio button">
+		<input type="password" name="Password">
+	</div>
+	
+	<div>	
+		<h2>Sign In</h2>
+		<form action="/sign-in-url" method="get">
+			<label for="username">Username:</label>
+			<input type="text" name="Name" placeholder="username" id="username" required>
 
-	<input type="text" placeholder="username" name="Text">
-	<input type="color" name="Color">
-	<input type="radio" name="Radio button">
-	<input type="password" name="Password">
+			<label for="password">Password:</label>
+			<input type="password" name="Password" placeholder="password" id="password" required>
+			
+			<label for="email">E-Mail</label>
+			<input type="email" name="email" id=email" placeholder="E-Mail">
+			<button>Login</button>
+			
+			<input type="submit" name="Submit">
+		</form>
+	</div>
 
-	<h2>Sign In</h2>
-	<form action="/sign-in-url" method="get">
-		<label for="username">Username:</label>
-		<input type="text" name="Name" placeholder="username" id="username">
+	<div>
+		<p>Some radio-buttons and checkboxes:</p>
+		<input type="radio" name="radio">	
+		<input type="checkbox" name="checkbox">
+	</div>
+	
+	<div>
+		<p>Do you prefer cats or dogs?</p>
+		<form>
+			<label for="dogs">Dogs:</label>
+			<input type="radio" name="petChoice" id="dogs" value="dogs">
 
-		<label for="password">Password:</label>
-		<input type="password" name="Password" placeholder="password" id="password">
+			<label for="cats">Cats:</label>
+			<input type="radio" id="cats" name="petChoice" value="cats"></input>
 
-		<button>Login</button>
-		
-		<input type="submit" name="Submit">
-	</form>
+			<p>What is your favority color?</p>
+			<select name="colors">
+				<option>Red</option>
+				<option>Orange</option>
+				<option>Yellow</option>
+			</select>
 
+			<p>What is your current mood?</p>
+			<select name="moods">
+				<option value="happy">:-)</option>
+				<option value="neutral">:-|</option>
+				<option value="sad">:-(</option>
+			</select>
+
+			<p>Textarea</p>
+			<textarea name="paragraph" rows=10 cols="50"></textarea>
+			<br>
+			<button>Go!</button>
+		</form>
+
+	</div>
+
+	<div>
+		<form>
+			<p>Textarea</p>
+			<textarea name="paragraph" rows=10 cols="50"></textarea>
+			<br>
+			<button>Submit</button>
+		</form>
+	</div>
+
+	<div style="height: 300px">	
+	</div>
 </body>
 </html>
