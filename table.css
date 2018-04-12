@@ -3,6 +3,11 @@ td, table, th
    border: 1px solid black;
 }
 
+.noborder td, table, th 
+{
+   border: none;
+}
+
 div
 {
 	border: 1px solid black;

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms excercise</title>
+	<link rel="stylesheet" type="text/css" href="./table.css">
+</head>
+<body>
+	<div>
+		<h1>Register</h1>
+	</div>
+	<form>
+		<div>
+			<label for="firsname">*First Name:</label>
+			<input type="text" name="firstname" id="firstname" placeholder="John" required>
+
+			<label for="lastname">*Last Name:</label>
+			<input type="text" name="lastname" id="lastname" placeholder="Smith" required>
+		</div>
+		<div>
+			<!--p>Gender</p-->
+			<table class="noborder">
+				<tr>
+					<td>
+						<label for="male">Male</label>	
+					</td>
+					<td>
+						<input type="radio" name="gender" id="male" value="male" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="female">Female</label>
+					</td>
+					<td>
+						<input type="radio" name="gender" id="female" value="female" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="other">Other</label>
+					</td>
+					<td>
+						<input type="radio" name="gender" id="other" value="other" required>	
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<label for="email">*Email:</label>
+			<input type="email" name="email" id="email" placeholder="your email" required>
+
+			<label for="password">*Password:</label>
+			<input type="password" name="password" id="password" placeholder="your password" minlength="5" maxlength="10" required>
+		</div>
+		<div>
+			<label for="month">*Birthday:</label>
+			<select name="month" required>
+				<option value="">Month</option>
+				<option value="january">January</option>
+				<option value="february">Februry</option>
+				<option value="march">March</option>
+				<option value="april">April</option>
+				<option value="may">May</option>
+				<option value="june">June</option>
+				<option value="july">July</option>
+				<option value="august">August</option>
+				<option value="september">September</option>
+				<option value="october">October</option>
+				<option value="november">November</option>
+				<option value="december">December</option>
+			</select>
+			<select name="day" required>
+				<option value="">Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="5">4</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+			</select>
+			<select name="year" required>
+				<option value="">Year</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+			</select>
+		</div>
+		<div>
+			I agree to therms and conditions: 
+			<input type="checkbox" name="agree" required="">
+		</div>
+		<button>Register</button>
+	</form>
+
+</body>
+</html>
