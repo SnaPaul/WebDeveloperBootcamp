@@ -1,0 +1,43 @@
+
+/*body is a element selector*/
+body{
+	background: lightgrey;
+}
+
+/*#special is an id-selector*/
+#special {
+	background-color: green;
+}
+
+/*.completed is an class selector*/
+.completed{
+	text-decoration: line-through; 
+}
+
+/* star selector - selects everything on the page */
+*{
+	border: 1px solid grey;
+}
+
+/* descendant selector - slecets elements under other elements*/
+ul li a {
+	color: red;
+}
+
+/* adjacent selector - select elements after the first given element */
+h4 + ul{
+	border: 4px solid red;
+}
+
+/* attribute selector - defines a style for an attribute of an tag*/
+a[href="http://www.google.com"]{
+	background:blue;
+}
+input[type="ceckbox"]{
+	/*some style here*/
+}
+
+/* nth of types selector - usefull to select some special element*/
+ul:nth-of-type(3){
+	background: purple;
+}

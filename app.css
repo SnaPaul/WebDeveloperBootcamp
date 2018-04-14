@@ -1,0 +1,40 @@
+/*h1{
+	color: red;
+}*/
+
+/* colorpicker.com - tool to help to choose
+ a color in RGB hexadecimal system*/
+
+
+h1{
+	color: #0C5196;
+/*	border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+	/*same as above*/
+	border: 8px dashed purple;
+
+}
+
+/*li{
+	color: green;
+}*/
+
+li{
+	color: rgba(180,255,255, 1);
+}
+
+/*h4{
+	color: purple;
+}*/
+
+h4{
+	color: rgb(0, 0 , 0);
+	background-color: rgba(255, 100, 80);
+}
+
+body{
+	background: url(./images/woodgrain.jpeg);
+	background-repeat: no;
+	/*background-size: cover;*/
+}
