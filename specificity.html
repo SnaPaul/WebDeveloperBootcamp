@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Specifity</title>
+	<style type="text/css">
+		/*ul{
+			color: purple;
+		}*/
+
+		/* SPECIFITY CALCULATOR: http://specificity.keegan.st */
+		/*Type selectors have a specifity number of 1 */
+		body{
+			color: red;
+		}
+
+		p{
+			color:green;
+		}
+		ul{
+			color: blue;
+		}
+
+		li{
+			color:orange;
+		}
+
+		li + a{
+			color: green;
+		}
+
+		li a{
+			color: red;
+		}
+
+		/* Class, Attribute and Pseudo-Class selectors are 10 times more specific like type selectors*/
+		.highlight{
+			color: yellow;
+		}
+
+		/* ID selectors are 100 times more specific than type selectors */
+		#special{
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>Hello!!!</p>
+
+		<ul>
+			<li class="highlight" id="special" style="color:red">John</li>
+			<li>Paul</li>
+			<li>George</li>
+			<li class="highlight">Ringo</li>
+		</ul>
+	</div>
+
+	<div>
+		<ul>
+			<li>
+				<a href="#">First link in ul li</a>
+			</li>
+			<li>
+				<a href="#">Second link in ul li</a>
+			</li>
+			<a href="*">First link in ul</a>
+		</ul>
+
+		<li>
+			<a href="#">First link in only li</a>
+		</li>
+		<li>
+			<a href="#">Second link in only li</a>
+		</li>
+		<a href="#">First link after ul</a>
+		<br>
+		<a href="#">Second link after ul</a>
+
+	</div>
+</body>
+</html>

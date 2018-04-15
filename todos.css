@@ -11,7 +11,7 @@ body{
 
 /*.completed is an class selector*/
 .completed{
-	text-decoration: line-through; 
+	text-decoration: line-through;
 }
 
 /* star selector - selects everything on the page */
